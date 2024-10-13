@@ -6,7 +6,6 @@ class ManaCostStats {
         const margin = { top: 30, right: 30, bottom: 70, left: 60 };
         const width = 460 - margin.left - margin.right;
         const height = 400 - margin.top - margin.bottom;
-        console.log(data);
         element.innerHtml = "";
 
 
@@ -43,9 +42,8 @@ class ManaCostStats {
         svg.selectAll("mybar")
             .data(data)
             .enter()
-            
             .append("rect")
-            .attr("x", d => {console.log(d); return x(d.cost);})
+            .attr("x", d => {return x(d.cost);})
             .attr("y", d => y(d.count))
             .attr("width", x.bandwidth())
             .attr("height", d => height - y(d.count))
@@ -74,11 +72,9 @@ class ManaCostStats {
 
         d3.select(element).on("my_event", function (event) {
             var myParams = event.detail;
-            console.log(myParams);
             svg.selectAll("mybar")
                 .data(myParams)
                 .enter()
-
                 .append("rect")
                 .attr("x", d => { console.log(d); return x(d.cost); })
                 .attr("y", d => y(d.count))

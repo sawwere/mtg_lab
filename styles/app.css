@@ -6,10 +6,13 @@
     flex-grow: 0.6;
     overflow: hidden;
     width: 75%;
+
+    background-color: rgb(185, 179, 196);
 }
 
 #menu {
     flex-grow: 0.2;
+    min-width: 200px;
     height: 800px;
     overflow: hidden;
     overflow-y: scroll;
@@ -50,7 +53,7 @@
     justify-content: center;
 }
 
-.ruleText {
+.cardText {
     text-align: left;
     margin-left: 10px;
 }
@@ -66,10 +69,47 @@
     border: 2px solid blue;
 }
 
-image {
-    display: block;
+ul {
+    list-style-type: square;
+    color: black;
+}
+
+li {
+    background-color: rgb(255, 255, 255);
+}
+
+li:nth-child(2n) {
+    background-color: rgb(186, 185, 187);
+}
+
+.buttonCardSearch {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 85%;
+    min-width: 85%;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.cardImage {
     margin-left: auto;
     margin-right: auto;
-    width: 223;
-    height: 310;
+    max-width: 223px;
+    max-height: 310px;
+}
+
+#deckContainer {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(146, 130, 175);
+}
+
+.cardContainer {
+    margin: 2px;
+    padding: 2px;
+    background: azure;
 }
