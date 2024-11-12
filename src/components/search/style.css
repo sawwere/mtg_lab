@@ -1,0 +1,23 @@
+ul {
+    list-style-type: square;
+    color: black;
+}
+
+li {
+    background-color: rgb(255, 255, 255);
+}
+
+li:nth-child(2n) {
+    background-color: rgb(186, 185, 187);
+}
+
+.buttonCardSearch {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 85%;
+    min-width: 85%;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

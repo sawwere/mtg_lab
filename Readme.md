@@ -1,21 +1,70 @@
-# Задание
+# Getting Started with Create React App
 
-Это заготовка редактора колод для игры MTG. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1. Разобраться в том, как собираются колоды в MTG
-2. Изучить [API](https://docs.magicthegathering.io/#documentationgetting_started) для доступа к картам в MTG.
-Можно использовать библиотеку для доступа к API или доработать заготовку, которая есть в проекте.
-3. На странице приложения выводится 100 первых карт и два захардкоженных виджета со статистикой. Виджеты собраны на d3.js.
-4. Нужно добавить на страницу поиск карт по названию. В результате поиска на левой панели должен меняться список карт.
-5. Нужно добавить возможность кликнуть по карте на левой панели. После клика по карте на средней панели должно появиться
-изображение карты, описание карты и кнопка "Добавить в колоду".
-6. При добавлении карты в колоду нужно пересчитывать виджеты на правой панели.
-7. Колода должна отображаться на средней панели в виде изображений карт с указанием числа карт в колоде.
-8. В колоду нельзя положить более 4 копий обычной карты и более 1 копии уникальной карты. Это правило не действует на Земли.
-9. Из колоды можно удалять карты. Виджеты при этом тоже должны обновляться.
-10. Внутри виджетов зашиты демонстрационные данные. Их нужно убрать.
-11. Можно заменить виджеты на аналогичные.
-12. Верстка поощряется, но не оценивается как обязательная часть лабораторной. Важно сделать корректно работающее приложение.
-Стилизация на усмотрение студента.
-13. Лабораторную можно делать в одиночку или вдвоем.
-14. В этот раз тесты не обязательны.
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

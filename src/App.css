@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+}
+
+.content {
+  flex-grow: 0.6;
+  overflow: hidden;
+  width: 75%;
+
+  background-color: rgb(185, 179, 196);
+}
+
+#menu {
+  flex-grow: 0.2;
+  min-width: 200px;
+  height: 800px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: black 1px solid;
+}
+
+#stats {
+  flex-grow: 0.2;
+  height: 800px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: black 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+.buttonCardSearch {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 85%;
+  min-width: 85%;
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}

@@ -40,7 +40,7 @@ class Deck {
         if (this.deck1.has(cardName)) {
             const item = this.deck1.get(cardName);
             this.size -= 1;
-            if (item.count == 1) {
+            if (item.count === 1) {
                 this.deck1.delete(cardName);
                 return 0;
             }
@@ -50,7 +50,7 @@ class Deck {
             }
         }
         else {
-            throw new Error("Key not found: " + card.name);
+            throw new Error("Key not found: " + cardName);
         }
     }
 

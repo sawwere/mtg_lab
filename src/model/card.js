@@ -1,6 +1,7 @@
 class Card {
 
     constructor(cardDto) {
+        this.id = cardDto.id;
         this.name = cardDto.name;
         this.text = cardDto.text === undefined ? "" : cardDto.text;
         this.cmc = cardDto.cmc;
@@ -22,7 +23,7 @@ class Card {
     }
 
     #calcRules(cardDto) {
-        const res = new Array();
+        const res = [];
         this.text.split('\n').forEach(rule => {
             res.push(rule);
         });
